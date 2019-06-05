@@ -162,6 +162,7 @@ body {
   height: 100%;
   font-family: roboto-slab;
   margin: 0 auto;
+  background-color: #BAE8FF;
   /*tablet*/
   /*phone*/
 }
@@ -181,7 +182,7 @@ body {
 }
 h1,
 h2 {
-  background-color: azure;
+  background-color: #95E8CF;
   font-weight: 700;
 }
 h3,
@@ -268,7 +269,7 @@ section.experience div.job {
   display: flex;
   flex-flow: column nowrap;
   text-align: left;
-  background-color: #EFEFEF;
+  background-color: #A9E3E8;
   padding-left: 20px;
   justify-content: flex-start;
   padding-bottom: 10px;
