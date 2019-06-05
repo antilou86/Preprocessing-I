@@ -144,14 +144,118 @@ table {
   align-content: center;
   align-items: center;
 }
+.bottomBorder {
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+  margin-bottom: 5px;
+}
+.topBorder {
+  padding-top: 10px;
+  border-top: solid black 1px;
+  margin-top: 5px;
+}
+.MarginCenter {
+  margin: 0 auto;
+}
 html,
 body {
+  width: 100%;
   height: 100%;
+  font-family: roboto-slab;
+  margin-left: 30px;
+  margin-right: 30px;
+  /*tablet*/
+  /*phone*/
+}
+@media (max-width: 800px) {
+  html,
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 header {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+header h1 {
+  width: 30%;
+  font-size: 1.5rem;
+  flex-wrap: nowrap;
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+  margin-bottom: 5px;
+}
+header nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 75%;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-top: 10px;
+  border-top: solid black 1px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+  margin-bottom: 5px;
+}
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+section h2 {
+  font-size: 1.33rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  border-top: solid black 1px;
+  margin-top: 5px;
+}
+section p {
+  font-size: 1rem;
+}
+section div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+section div img {
+  width: 15%;
+  height: 100%;
+}
+section div p {
+  width: 80%;
+  font-size: 0.9rem;
+}
+section div h3 {
+  font-size: 1.125rem;
+  margin-top: 10px;
+}
+section div h4 {
+  margin-top: 5px;
+}
+section div ul {
+  list-style: circle;
   justify-content: center;
   align-content: center;
   align-items: center;
