@@ -130,7 +130,29 @@ table {
 * {
   box-sizing: border-box;
 }
+.commonFlexButOkay {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.straightUpAndDown {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.centerFlex {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 html,
 body {
   height: 100%;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
