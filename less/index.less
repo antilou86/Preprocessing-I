@@ -57,7 +57,6 @@ table {
 .commonFlexButOkay {
 	display: flex; 
 	flex-flow: row wrap;
-	justify-content: space-around;
 }
 
 .straightUpAndDown {
@@ -91,6 +90,8 @@ html, body {
 	font-family: roboto-slab;
 	margin-left: 30px;
 	margin-right: 30px;
+
+
 	/*tablet*/
 	@media (max-width: 800px) {
 		margin-left: 10px;
@@ -129,46 +130,78 @@ header {
 }
 
 
-	section {
-		.straightUpAndDown();
-		width: @hundoP;
-		margin-bottom: 20px;
-		padding-right: 30px;
+section {
+	.straightUpAndDown();
+	width: @hundoP;
+	margin-bottom: 20px;
+	padding-right: 30px;
+	justify-content: space-around;
 
 		h2 {
 			font-size:1.33rem;
 			text-align: center;
 			.bottomBorder();
 			.topBorder();
+			justify-content: space-around;
+			width: @hundoP;
 		}
 
 		p{
 			font-size: 1rem;
+			justify-content: space-around;
 		}
 		
 		div {
 			.commonFlexButOkay();
+			justify-content: space-around;
 
 			img {
-			width: @hundoP - 85%;
-			height: 100%;
+
+			height: 120px;
 			}
 
 			p {
-			width: @hundoP - 20%;
+			width: @hundoP - 25%;
 			font-size: .9rem;
 			}
+		}
+}
+	section.experience {
+		.commonFlexButOkay();
 
+		h2 {
+			width: @hundoP;
+		}
+
+		div.job{
+			width: 50%;
+			.straightUpAndDown();
+			text-align: left;
+			background-color: #EFEFEF;
+			padding-left:20px;
+			justify-content: flex-start;
+			.bottomBorder();
+		@media (800px) {
+			width: 80%;
+			padding-left:10px;
+		}
 			h3 {
 				font-size: 1.125rem;
 				margin-top: 10px;
+				font-family: 'Times New Roman', Times, serif;
+				
+				 
 			}
 			h4 {
 				margin-top: 5px;
+				padding-bottom: 30px;
+				.topBorder();
 			}
+
 			ul {
 				list-style: circle;
 				.centerFlex();
+				padding-bottom: 20px;
 			}
 
 		}
