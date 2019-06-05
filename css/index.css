@@ -153,16 +153,15 @@ table {
   border-top: solid black 1px;
   margin-top: 5px;
 }
-.MarginCenter {
+.marginCenter {
   margin: 0 auto;
 }
 html,
 body {
-  width: 100%;
+  width: 80%;
   height: 100%;
   font-family: roboto-slab;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
   /*tablet*/
   /*phone*/
 }

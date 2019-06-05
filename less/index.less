@@ -81,15 +81,14 @@ table {
 	border-top: solid black 1px;
 	margin-top: 5px;
 }
-.MarginCenter {
+.marginCenter {
 	margin: 0 auto;
 }
 html, body {
-	width: @hundoP;
+	width: @hundoP - 20%;
 	height: 100%;
 	font-family: roboto-slab;
-	margin-left: 30px;
-	margin-right: 30px;
+	.marginCenter();
 
 
 	/*tablet*/
@@ -114,7 +113,7 @@ h3, h4 {
 header {
 	width: @hundoP;
 	.straightUpAndDown();
-	.MarginCenter();
+	.marginCenter();
 	.centerFlex();
 	text-align: center;
 	margin-top:30px;
