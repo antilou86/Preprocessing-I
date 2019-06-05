@@ -180,6 +180,15 @@ body {
     margin-right: 5px;
   }
 }
+h1,
+h2 {
+  background-color: azure;
+  font-weight: 700;
+}
+h3,
+h4 {
+  font-style: italic;
+}
 header {
   width: 100%;
   display: flex;
@@ -267,12 +276,6 @@ section.experience div.job {
   border-bottom: solid black 1px;
   margin-bottom: 5px;
 }
-@media (800px) {
-  section.experience div.job {
-    width: 80%;
-    padding-left: 10px;
-  }
-}
 section.experience div.job h3 {
   font-size: 1.125rem;
   margin-top: 10px;
@@ -290,4 +293,9 @@ section.experience div.job ul {
   align-content: center;
   align-items: center;
   padding-bottom: 20px;
+}
+section.contact p {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

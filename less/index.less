@@ -104,6 +104,13 @@ html, body {
 	}
 }
 
+h1, h2 {
+	background-color: azure;
+	font-weight: 700;
+}
+h3, h4 {
+	font-style: italic;
+}
 header {
 	width: @hundoP;
 	.straightUpAndDown();
@@ -168,7 +175,6 @@ section {
 }
 	section.experience {
 		.commonFlexButOkay();
-
 		h2 {
 			width: @hundoP;
 		}
@@ -181,10 +187,8 @@ section {
 			padding-left:20px;
 			justify-content: flex-start;
 			.bottomBorder();
-		@media (800px) {
-			width: 80%;
-			padding-left:10px;
-		}
+
+		
 			h3 {
 				font-size: 1.125rem;
 				margin-top: 10px;
@@ -206,6 +210,14 @@ section {
 
 		}
 	}
+section.contact {
+	p {
+		text-align: center;
+		padding: 10px 10px 10px 10px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		
+	}
+}
 
 
 
