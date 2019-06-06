@@ -156,38 +156,31 @@ table {
 .marginCenter {
   margin: 0 auto;
 }
+.roundItOut {
+  border-radius: 10px;
+  background-color: white;
+  background-image: linear-gradient(white, #acc8ca);
+}
 html,
 body {
   width: 80%;
   height: 100%;
-  font-family: roboto-slab;
+  font-family: 'Quicksand', sans-serif;
   margin: 0 auto;
-  background-color: #BAE8FF;
-  /*tablet*/
-  /*phone*/
+  background-color: white;
 }
-@media (max-width: 800px) {
-  html,
-  body {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-@media (max-width: 400px) {
-  html,
-  body {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}
-h1,
 h2 {
-  background-color: #95E8CF;
+  background-color: #acc8ca;
   font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 10px;
+  background-color: white;
+  background-image: linear-gradient(white, #acc8ca);
 }
 h3,
 h4 {
   font-style: italic;
+  font-family: 'Quicksand', sans-serif;
 }
 header {
   width: 100%;
@@ -207,6 +200,7 @@ header h1 {
   padding-bottom: 10px;
   border-bottom: solid black 1px;
   margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
 }
 header nav {
   display: flex;
@@ -214,12 +208,10 @@ header nav {
   width: 75%;
   justify-content: space-evenly;
   align-content: space-between;
+  padding-bottom: 20px;
   padding-top: 10px;
   border-top: solid black 1px;
   margin-top: 5px;
-  padding-bottom: 10px;
-  border-bottom: solid black 1px;
-  margin-bottom: 5px;
 }
 section {
   display: flex;
@@ -231,19 +223,17 @@ section {
 }
 section h2 {
   font-size: 1.33rem;
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: solid black 1px;
-  margin-bottom: 5px;
-  padding-top: 10px;
-  border-top: solid black 1px;
-  margin-top: 5px;
-  justify-content: space-around;
+  text-align: left;
+  justify-content: flex-end;
   width: 100%;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
 }
 section p {
   font-size: 1rem;
   justify-content: space-around;
+  padding-left: 1rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 section div {
   display: flex;
@@ -252,10 +242,18 @@ section div {
 }
 section div img {
   height: 120px;
+  border-radius: 55px;
 }
 section div p {
   width: 75%;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 800px) {
+  section div p {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 section.experience {
   display: flex;
@@ -265,27 +263,39 @@ section.experience h2 {
   width: 100%;
 }
 section.experience div.job {
-  width: 50%;
+  width: 43%;
   display: flex;
   flex-flow: column nowrap;
   text-align: left;
-  background-color: #A9E3E8;
-  padding-left: 20px;
+  background-color: #acc8ca;
+  padding: 20px 30px;
+  margin: 20px;
   justify-content: flex-start;
-  padding-bottom: 10px;
-  border-bottom: solid black 1px;
-  margin-bottom: 5px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 900px) {
+  section.experience div.job {
+    padding: 10px 30px;
+    margin: 10px 10px;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  section.experience div.job {
+    padding: 10px 30px;
+    margin: 10px;
+    width: 90%;
+  }
 }
 section.experience div.job h3 {
   font-size: 1.125rem;
   margin-top: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 section.experience div.job h4 {
-  padding-bottom: 30px;
-  padding-top: 10px;
-  border-top: solid black 1px;
   margin-top: 5px;
+  padding-bottom: 30px;
 }
 section.experience div.job ul {
   list-style: circle;
@@ -297,5 +307,5 @@ section.experience div.job ul {
 section.contact p {
   text-align: center;
   padding: 10px 10px 10px 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
