@@ -1,1 +1,311 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.commonFlexButOkay {
+  display: flex;
+  flex-flow: row wrap;
+}
+.straightUpAndDown {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.centerFlex {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.bottomBorder {
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+  margin-bottom: 5px;
+}
+.topBorder {
+  padding-top: 10px;
+  border-top: solid black 1px;
+  margin-top: 5px;
+}
+.marginCenter {
+  margin: 0 auto;
+}
+.roundItOut {
+  border-radius: 10px;
+  background-color: white;
+  background-image: linear-gradient(white, #acc8ca);
+}
+html,
+body {
+  width: 80%;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0 auto;
+  background-color: white;
+}
+h2 {
+  background-color: #acc8ca;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 10px;
+  background-color: white;
+  background-image: linear-gradient(white, #acc8ca);
+}
+h3,
+h4 {
+  font-style: italic;
+  font-family: 'Quicksand', sans-serif;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+header h1 {
+  width: 30%;
+  font-size: 1.5rem;
+  flex-wrap: nowrap;
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+}
+header nav {
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-top: solid black 1px;
+  margin-top: 5px;
+}
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-right: 30px;
+  justify-content: space-around;
+}
+section h2 {
+  font-size: 1.33rem;
+  text-align: left;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+section p {
+  font-size: 1rem;
+  justify-content: space-around;
+  padding-left: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+section div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+section div img {
+  height: 120px;
+  border-radius: 55px;
+}
+section div p {
+  width: 75%;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 800px) {
+  section div p {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+section.experience {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.experience h2 {
+  width: 100%;
+}
+section.experience div.job {
+  width: 43%;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+  background-color: #acc8ca;
+  padding: 20px 30px;
+  margin: 20px;
+  justify-content: flex-start;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 900px) {
+  section.experience div.job {
+    padding: 10px 30px;
+    margin: 10px 10px;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  section.experience div.job {
+    padding: 10px 30px;
+    margin: 10px;
+    width: 90%;
+  }
+}
+section.experience div.job h3 {
+  font-size: 1.125rem;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+}
+section.experience div.job h4 {
+  margin-top: 5px;
+  padding-bottom: 30px;
+}
+section.experience div.job ul {
+  list-style: circle;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+section.contact p {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
